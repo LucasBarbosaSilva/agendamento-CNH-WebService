@@ -23,7 +23,7 @@
 		loadingSchedule.value = true
 		try {
 			showDialog.value = true
-			await scheduleService.update(s.id)
+			await scheduleService.update(s)
 			scheduled.value = s
 		} catch (error) {
 			console.error(error)
