@@ -11,7 +11,9 @@
 		recentScheduleIds: number[]
 	}>()
 
-	const emit = defineEmits(['schedule-updated'])
+	const emit = defineEmits<{
+		'schedule-updated': [newId?: number]
+	}>()
 
 	const loadingSchedule = ref(false)
 	const showDialog = ref(false)
@@ -23,7 +25,14 @@
 		loadingSchedule.value = true
 		try {
 			showDialog.value = true
-			await scheduleService.update(s)
+			await scheduleService.update(
+				s.id,
+				{
+					data: s.data,
+					hora: s.hora,
+					agendado: true,
+				}
+			)
 			scheduled.value = s
 		} catch (error) {
 			console.error(error)
@@ -33,7 +42,7 @@
 
 	function handleDialogClose(success: boolean) {
 		showDialog.value = false
-		if(success) emit('schedule-updated')
+		if(success) emit('schedule-updated', scheduled.value?.id)
 	}
 </script>
 

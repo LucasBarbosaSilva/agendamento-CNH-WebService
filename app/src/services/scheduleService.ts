@@ -8,7 +8,7 @@ export default {
     return api.get<Schedule[]>(`${resource}`);
   },
 
-  update(schedule: Schedule) {
-    return api.put(`${resource}/${schedule.id}`, {schedule});
+  update(id: number, schedule:  Partial<Schedule>) {
+    return api.put(`${resource}/${id}`, schedule);
   },
 };

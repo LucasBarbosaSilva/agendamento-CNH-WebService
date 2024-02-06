@@ -34,6 +34,11 @@
     loading.value = false
   }
 
+  function handleScheduleUpdated(newId?: number) {
+    if(newId) recentScheduleIds.value.push(newId)
+    fetchSchedules()
+  }
+
   onMounted(() => {
     fetchSchedules()
   })
@@ -47,7 +52,7 @@
       :day="day"
       :schedules="schedules"
       :recent-schedule-ids="recentScheduleIds"
-      @schedule-updated="fetchSchedules"
+      @schedule-updated="handleScheduleUpdated"
     />
     <div class="w-100 text-center" v-else-if="loading">
       <v-progress-circular

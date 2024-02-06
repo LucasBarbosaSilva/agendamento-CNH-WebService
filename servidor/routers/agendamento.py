@@ -40,6 +40,30 @@ listaHorarios = [
         'data': '02/02/2024',
         'hora': '09:00',
         'agendado': False
+    },
+    {
+        'id': 7,
+        'data': '01/02/2024',
+        'hora': '09:30',
+        'agendado': False
+    },
+    {
+        'id': 8,
+        'data': '02/02/2024',
+        'hora': '10:00',
+        'agendado': False
+    },
+    {
+        'id': 9,
+        'data': '02/02/2024',
+        'hora': '10:30',
+        'agendado': False
+    },
+    {
+        'id': 10,
+        'data': '04/02/2024',
+        'hora': '13:00',
+        'agendado': False
     }
 ]
 
