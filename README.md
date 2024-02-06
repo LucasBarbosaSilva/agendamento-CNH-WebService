@@ -1,3 +1,10 @@
+<h1 align="center">
+Agendamento de Consulta de Vista
+</h1>
+<p align="center">
+Projeto desenvolvido para disciplina de Sistemas Distribuídos - Ciências da Computação, UFAL Arapiraca
+</p>
+
 ## Servidor
 1. Precisa ter o Python instalado
 2. Clone o repositório
