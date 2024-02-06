@@ -4,7 +4,7 @@
   import type { Schedule } from '@/models/schedule'
   import scheduleService from '@/services/scheduleService'
   
-  const recentScheduleIds = ref<number[]>([1])
+  const recentScheduleIds = ref<number[]>([])
   const schedules = ref<Schedule[]>([])
   const loading = ref(false)
 
