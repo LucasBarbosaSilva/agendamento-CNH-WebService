@@ -9,7 +9,7 @@ listaHorarios = [
         'id': 1,
         'data': '01/02/2024',
         'hora': '08:00',
-        'agendado': False
+        'agendado': True
     },
     {
         'id': 2,
@@ -20,6 +20,24 @@ listaHorarios = [
     {
         'id': 3,
         'data': '01/02/2024',
+        'hora': '09:00',
+        'agendado': False
+    },
+    {
+        'id': 4,
+        'data': '02/02/2024',
+        'hora': '08:00',
+        'agendado': False
+    },
+    {
+        'id': 5,
+        'data': '02/02/2024',
+        'hora': '08:30',
+        'agendado': True
+    },
+    {
+        'id': 6,
+        'data': '02/02/2024',
         'hora': '09:00',
         'agendado': False
     }
