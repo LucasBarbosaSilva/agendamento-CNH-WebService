@@ -12,14 +12,30 @@ cd servidor
 ```bash
 python3 -m venv .env
 ```
-Pode-se usar o comando python caso seja o Python 2 instalado. Caso não tenha o módulo venv, pode ser instalado pelo comando informado no erro e executar o comando acima novamente.
-7. Instale os requirements:
+Pode-se usar o comando python caso seja o Python 2 instalado. Caso não tenha o módulo venv, pode ser instalado pelo comando informado no erro e executar o comando acima novamente. <br>
+6. Instale os requirements:
 ```bash
 pip install -r requirements.txt
 ```
-8. Após estas instalações você possivelmente será capaz de inicializar o projeto:
+7. Após estas instalações você possivelmente será capaz de inicializar o projeto:
 ```bash
 python main.py # Or python3 main.py
 ```
-10. Consulte a documentação da API acessando: http://localhost:8001/docs
+8. Consulte a documentação da API acessando: http://localhost:8001/docs
    
+## App
+
+1. Precisa ter **npm** e **node.js** instalados na máquina. Caso não possua instalado, siga os passos [aqui](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
+2. Nagegue até a pasta app
+```bash
+cd app
+```
+3. Instale as dependências com o seguinte comando
+```bash
+npm install
+```
+5. Inicie a aplicação
+```bash
+npm run dev   
+```
+6. A aplicação estará rodando na porta 5173 http://localhost:5173/.
